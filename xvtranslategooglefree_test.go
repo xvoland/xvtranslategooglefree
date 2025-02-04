@@ -2,7 +2,8 @@ package xvtranslategooglefree_test
 
 import (
 	"testing"
-	"v1/translate4me/libs/xvtranslategooglefree" // Correct import path
+
+	"github.com/xvoland/xvtranslategooglefree" // Correct import path
 )
 
 func TestTranslate(t *testing.T) {

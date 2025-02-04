@@ -1,3 +1,3 @@
-module v1/translate4me
+module github.com/xvoland/xvtranslategooglefree
 
 go 1.23.5
