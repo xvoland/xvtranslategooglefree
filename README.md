@@ -13,7 +13,7 @@ It supports various language pairs and includes error handling for common issues
 
 ```
 import (
-	translate "v1/libs/xvtranslategooglefree"
+	translate "github.com/xvoland/xvtranslategooglefree"
 )
 
     translatedText, err := translate.Translate("Hello", "en", "es")
