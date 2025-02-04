@@ -16,14 +16,14 @@ Call the Translate function with the source text, source language, and target la
 Example:
 
 import (
-	translate "v1/libs/xvtranslategooglefree"
+	translate "github.com/xvoland/xvtranslategooglefree"
 )
 
-    translatedText, err := translate.Translate("Hello", "en", "es")
+    translatedText, err := translate.Translate("Glory to Ukraine", "en", "es")
     if err != nil {
         log.Fatal(err)
     }
-    fmt.Println(translatedText) // Output: Hola
+    fmt.Println(translatedText) // Output: Слава Україні
 
 */
 
