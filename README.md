@@ -16,9 +16,9 @@ import (
 	translate "github.com/xvoland/xvtranslategooglefree"
 )
 
-    translatedText, err := translate.Translate("Hello", "en", "uk")
+    translatedText, err := translate.Translate("Glory to Ukraine", "en", "uk")
     if err != nil {
         log.Fatal(err)
     }
-    fmt.Println(translatedText) // Output: Привіт
+    fmt.Println(translatedText) // Output: Слава Україні
 ```
