@@ -1,5 +1,8 @@
 # Google Translate FREE in golang
 
+![Go](https://github.com/xvoland/xvtranslategooglefree/actions/workflows/go.yml/badge.svg)
+
+
 Package xvtranslategooglefree provides functionality for translating text without using the Google Translate API
 
 ## Description:
