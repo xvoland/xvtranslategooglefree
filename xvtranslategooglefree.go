@@ -25,6 +25,13 @@ import (
     }
     fmt.Println(translatedText) // Output: Слава Україні
 
+
+    From testing various options:
+
+    https://translate.googleapis.com/translate_a/single provides great translations at the moment, but rate limits relatively easily. Probably your best shot.
+    https://translate.google.com/m - slightly different but still high quality translations. Generous rate limit, but responds in (primitive) HTML and does not really handle newlines; results seem to be a little unstable (i.e. may slightly differ from query to query) - or is this some kind of super sneaky rate limiting? A little annoying but apparently very well usable.
+    https://translate.google.com/_/TranslateWebserverUi/data/batchexecute is what translate.google.com itself uses. Generous rate limit but requires using correct X-Goog-BatchExecute-Bgr header for accurate translations (also requires a proper referrer). Would be the ideal option if someone RE'd the algo from obfuscated JS, which is much easier said than done - for starters, header is different between page reloads, so it's not purely derived from payload contents. If you really need it, probably use some kind of browser automation, because I doubt at this point that it will be figured out (official API access costs money, but time spent RE'ing stuff is money too).
+    https://clients5.google.com/translate_a and https://clients5.google.com/translate_a/single both return bad translations. Avoid.
 */
 
 package xvtranslategooglefree
